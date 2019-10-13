@@ -1,0 +1,5 @@
+build docker faile --  docker build -f Dockerfile .
+
+complilar aplicação java -- mvn package -Dmaven.test.skip=true  && java -jar target/controle-despesas.jar 
+
+
