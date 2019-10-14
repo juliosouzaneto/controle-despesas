@@ -2,6 +2,22 @@ build docker file --  docker build -f Dockerfile .
 
 docker build -t app-controle-despesas .   (app-controle-despesas - nome da imagem)
 
+docker run -d --name container_name image_name
+
 complilar aplicação java -- mvn package -Dmaven.test.skip=true  && java -jar target/controle-despesas.jar 
 
+
+
+   65  docker container prune  -- remove todos os container
+   66  docker images
+   67
+   68  docker rmi 24e0b70a158c -- removo uma imagem
+   
+   75  docker build -t app-controle-despesas .
+
+   87  docker-compose build
+
+   91  docker-compose up
+   92  docker-compose ps
+   97  docker exec -it controle-depesas-2 ping mongodb --- ping em container
 
