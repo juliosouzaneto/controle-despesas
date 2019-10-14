@@ -1,0 +1,28 @@
+version: '2'
+services: 
+  controle-depesas:
+    build:
+      dockerfile: ./Dockerfile
+      context:  .
+    image: juliosouzaneto/controle-despesas
+    container_name: controle-depesas-2
+    ports: 
+      - "8090:8082"
+    networks: 
+      - production-network
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+    
+  mongodb:
+    image: mongo
+    networks: 
+     - production-network
+
+
+networks: 
+  production-network:
+    driver: bridge
+
+

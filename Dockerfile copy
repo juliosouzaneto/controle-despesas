@@ -1,0 +1,10 @@
+FROM openjdk:8-jdk-alpine
+
+MAINTAINER julio neto
+
+VOLUME /tmp
+COPY target/*.jar controle-despesas.jar
+ENTRYPOINT ["java","-jar","/controle-despesas.jar"]
+
+
+EXPOSE 3000

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
-@RequestMapping("/controle-despesas/")
+@RequestMapping("/controle-despesassss/")
 public class AccountController {
 
     @Autowired
