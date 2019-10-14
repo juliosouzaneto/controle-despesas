@@ -21,3 +21,5 @@ complilar aplicação java -- mvn package -Dmaven.test.skip=true  && java -jar t
    92  docker-compose ps
    97  docker exec -it controle-depesas-2 ping mongodb --- ping em container
 
+   docker push nome_image - subir uma image para docker hub
+
