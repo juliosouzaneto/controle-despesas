@@ -6,6 +6,9 @@ docker run -d --name container_name image_name
 
 complilar aplicação java -- mvn package -Dmaven.test.skip=true  && java -jar target/controle-despesas.jar 
 
+criar um nome container my-python-app-devops-new a partir da imagem my-python-app-devops
+mapeia a porta interna 500 do container para a porta 8087
+   docker run --name my-python-app-devops-new  -p 8087:5000 my-python-app-devops
 
 
    65  docker container prune  -- remove todos os container
